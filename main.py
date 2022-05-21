@@ -31,6 +31,7 @@ async def on_ready():
     print('Python Bot is ready: {0.user}'.format(client))
 
 
+# Linking the code with the client where the client verifies the user and detects any message with the special abbreviations
 @client.event
 async def on_message(message):
     if message.author == client.user:
